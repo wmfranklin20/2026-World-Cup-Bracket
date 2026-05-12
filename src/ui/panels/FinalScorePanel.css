@@ -1,0 +1,96 @@
+.final-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-2);
+  text-align: center;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.final-panel h2 {
+  font-size: var(--font-size-lg);
+  margin: 0;
+}
+
+.final-panel--empty {
+  align-items: center;
+}
+
+.final-panel__sub {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  line-height: 1.35;
+}
+
+.final-panel__board {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-2) var(--space-2);
+  align-items: center;
+  justify-items: center;
+  margin-top: var(--space-3);
+  width: 100%;
+  min-width: 0;
+}
+
+.final-panel__board > .team-row {
+  width: 100%;
+  justify-content: center;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.final-panel__board > .team-row .team-row__name {
+  flex: 0 1 auto;
+}
+
+.final-panel__sep {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-muted);
+  font-style: italic;
+  padding: 0 var(--space-1);
+}
+
+.final-panel__board > .stepper {
+  align-items: center;
+}
+
+.final-panel__board .stepper__label {
+  display: none;
+}
+
+.final-panel__board .stepper__controls {
+  max-width: 100%;
+}
+
+.final-panel__board .stepper__btn {
+  width: 26px;
+  font-size: var(--font-size-md);
+}
+
+.final-panel__board .stepper__input {
+  width: 34px;
+  font-size: var(--font-size-md);
+  padding: var(--space-1) 0;
+}
+
+.final-panel__warning {
+  margin-top: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--accent-one-soft);
+  color: var(--color-danger);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  text-align: center;
+}

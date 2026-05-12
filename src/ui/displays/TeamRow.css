@@ -1,0 +1,125 @@
+.team-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--team-row-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  min-height: 40px;
+  position: relative;
+}
+
+.team-row--compact {
+  padding: var(--space-1) var(--space-2);
+  min-height: 32px;
+  font-size: var(--font-size-sm);
+}
+
+.team-row--draggable {
+  cursor: grab;
+  user-select: none;
+}
+
+.team-row--draggable:hover {
+  background: var(--team-row-bg-hover);
+}
+
+.team-row--draggable[data-dragging] {
+  opacity: 0.55;
+  background: var(--team-row-bg-dragging);
+  cursor: grabbing;
+}
+
+.team-row--draggable[data-drop-above]::before,
+.team-row--draggable[data-drop-below]::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--team-row-indicator-above);
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+.team-row--draggable[data-drop-above]::before {
+  top: -2px;
+}
+.team-row--draggable[data-drop-below]::after {
+  bottom: -2px;
+}
+
+.team-row--picked {
+  background: var(--team-row-bg-picked);
+  border-color: var(--team-row-border-picked);
+}
+
+.team-row--advancing {
+  border-color: rgba(0, 179, 134, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 179, 134, 0.1);
+}
+
+.team-row--advancing.team-row--draggable:hover {
+  box-shadow: 0 6px 16px rgba(0, 179, 134, 0.14);
+}
+
+.team-row--dim {
+  background: var(--gray-three);
+}
+
+.team-row--dim .team-row__name,
+.team-row--dim .team-row__flag,
+.team-row--dim .team-row__code {
+  opacity: 0.5;
+}
+
+.team-row--eliminated {
+  background: var(--team-row-bg-eliminated);
+  color: var(--team-row-fg-eliminated);
+  text-decoration: line-through;
+}
+
+.team-row--empty .team-row__name {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.team-row__flag {
+  width: 24px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(8, 6, 13, 0.08);
+}
+
+.team-row--compact .team-row__flag {
+  width: 20px;
+  height: 15px;
+}
+
+.team-row__name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-row__code {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+}
+
+.team-row__leading,
+.team-row__trailing {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}

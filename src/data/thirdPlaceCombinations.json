@@ -1,0 +1,11895 @@
+{
+  "_note": "Official FIFA 2026 third-place advancement table. Each entry lists the 8 groups whose 3rd-place team advances to the Round of 32 (advancingGroups), and which 3rd-place team faces each of the 8 group-winner R32 hosts (matchups: 1X -> Y means group X's winner faces group Y's 3rd-place team). 'key' is the sorted-and-joined advancingGroups string, intended for O(1) lookup. 495 entries = C(12, 8).",
+  "matchupKeys": [
+    "1A",
+    "1B",
+    "1D",
+    "1E",
+    "1G",
+    "1I",
+    "1K",
+    "1L"
+  ],
+  "combinations": [
+    {
+      "id": 1,
+      "advancingGroups": [
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "EFGHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "F",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 2,
+      "advancingGroups": [
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "DFGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 3,
+      "advancingGroups": [
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "DEGHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 4,
+      "advancingGroups": [
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "DEFHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 5,
+      "advancingGroups": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "DEFGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 6,
+      "advancingGroups": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "DEFGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 7,
+      "advancingGroups": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "DEFGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 8,
+      "advancingGroups": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "DEFGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 9,
+      "advancingGroups": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "DEFGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 10,
+      "advancingGroups": [
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CFGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 11,
+      "advancingGroups": [
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CEGHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 12,
+      "advancingGroups": [
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CEFHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 13,
+      "advancingGroups": [
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CEFGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 14,
+      "advancingGroups": [
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CEFGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 15,
+      "advancingGroups": [
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "CEFGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 16,
+      "advancingGroups": [
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "CEFGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 17,
+      "advancingGroups": [
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "CEFGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 18,
+      "advancingGroups": [
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 19,
+      "advancingGroups": [
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDFHIJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 20,
+      "advancingGroups": [
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDFGIJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 21,
+      "advancingGroups": [
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDFGHJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 22,
+      "advancingGroups": [
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "CDFGHIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 23,
+      "advancingGroups": [
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "CDFGHIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 24,
+      "advancingGroups": [
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "CDFGHIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 25,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDEHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 26,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDEGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 27,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDEGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 28,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "CDEGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 29,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "CDEGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 30,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "CDEGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 31,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDEFIJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 32,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDEFHJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 33,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "CDEFHIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "I",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 34,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "CDEFHIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 35,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "CDEFHIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 36,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "CDEFGJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 37,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "CDEFGIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 38,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "CDEFGIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 39,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "CDEFGIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 40,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "CDEFGHKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 41,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "CDEFGHJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 42,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "CDEFGHJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 43,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "CDEFGHIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 44,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "CDEFGHIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 45,
+      "advancingGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "CDEFGHIJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 46,
+      "advancingGroups": [
+        "B",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BFGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 47,
+      "advancingGroups": [
+        "B",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BEGHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "B",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 48,
+      "advancingGroups": [
+        "B",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BEFHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 49,
+      "advancingGroups": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BEFGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 50,
+      "advancingGroups": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BEFGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 51,
+      "advancingGroups": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BEFGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "F",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 52,
+      "advancingGroups": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BEFGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 53,
+      "advancingGroups": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BEFGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "H",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 54,
+      "advancingGroups": [
+        "B",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 55,
+      "advancingGroups": [
+        "B",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDFHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 56,
+      "advancingGroups": [
+        "B",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDFGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 57,
+      "advancingGroups": [
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDFGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 58,
+      "advancingGroups": [
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BDFGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 59,
+      "advancingGroups": [
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BDFGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 60,
+      "advancingGroups": [
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BDFGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 61,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDEHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 62,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDEGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 63,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDEGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 64,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BDEGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 65,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BDEGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 66,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BDEGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 67,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDEFIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 68,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDEFHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 69,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BDEFHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 70,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BDEFHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 71,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BDEFHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 72,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BDEFGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 73,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BDEFGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 74,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BDEFGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 75,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BDEFGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 76,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "BDEFGHKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 77,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "BDEFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 78,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "BDEFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 79,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "BDEFGHIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 80,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "BDEFGHIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 81,
+      "advancingGroups": [
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "BDEFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 82,
+      "advancingGroups": [
+        "B",
+        "C",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 83,
+      "advancingGroups": [
+        "B",
+        "C",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCFHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 84,
+      "advancingGroups": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCFGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 85,
+      "advancingGroups": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCFGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 86,
+      "advancingGroups": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCFGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 87,
+      "advancingGroups": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCFGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 88,
+      "advancingGroups": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCFGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 89,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCEHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 90,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCEGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 91,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCEGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 92,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCEGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 93,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCEGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 94,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCEGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 95,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCEFIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 96,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCEFHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 97,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCEFHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 98,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCEFHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 99,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCEFHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 100,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCEFGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 101,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCEFGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 102,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCEFGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 103,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCEFGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 104,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "BCEFGHKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 105,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "BCEFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 106,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "BCEFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 107,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "BCEFGHIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 108,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "BCEFGHIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 109,
+      "advancingGroups": [
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "BCEFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 110,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 111,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 112,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 113,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCDGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 114,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCDGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 115,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCDGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 116,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDFIJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 117,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDFHJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 118,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCDFHIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "I",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 119,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCDFHIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 120,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCDFHIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 121,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDFGJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 122,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCDFGIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 123,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCDFGIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 124,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCDFGIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 125,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "BCDFGHKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 126,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "BCDFGHJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 127,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "BCDFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 128,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "BCDFGHIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 129,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "BCDFGHIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 130,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "BCDFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 131,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDEIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 132,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDEHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 133,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCDEHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 134,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCDEHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 135,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCDEHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 136,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDEGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 137,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCDEGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "I",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 138,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCDEGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 139,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCDEGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 140,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "BCDEGHKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 141,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "BCDEGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 142,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "BCDEGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 143,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "BCDEGHIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 144,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "BCDEGHIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "H",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 145,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "BCDEGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "D",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 146,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "BCDEFJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "E",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 147,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "BCDEFIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 148,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "BCDEFIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "E",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 149,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "BCDEFIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "E",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 150,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "BCDEFHKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 151,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "BCDEFHJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 152,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "BCDEFHJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 153,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "BCDEFHIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 154,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "BCDEFHIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 155,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "BCDEFHIJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 156,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "K",
+        "L"
+      ],
+      "key": "BCDEFGKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "E",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 157,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "L"
+      ],
+      "key": "BCDEFGJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 158,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K"
+      ],
+      "key": "BCDEFGJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 159,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "L"
+      ],
+      "key": "BCDEFGIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "E",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 160,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K"
+      ],
+      "key": "BCDEFGIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "E",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 161,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J"
+      ],
+      "key": "BCDEFGIJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "J",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 162,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "L"
+      ],
+      "key": "BCDEFGHL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 163,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K"
+      ],
+      "key": "BCDEFGHK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 164,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J"
+      ],
+      "key": "BCDEFGHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "J",
+        "1I": "F",
+        "1K": "D",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 165,
+      "advancingGroups": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "key": "BCDEFGHI",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "H",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 166,
+      "advancingGroups": [
+        "A",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "AFGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "I",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 167,
+      "advancingGroups": [
+        "A",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "AEGHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "A",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 168,
+      "advancingGroups": [
+        "A",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "AEFHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 169,
+      "advancingGroups": [
+        "A",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "AEFGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 170,
+      "advancingGroups": [
+        "A",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "AEFGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 171,
+      "advancingGroups": [
+        "A",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "AEFGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 172,
+      "advancingGroups": [
+        "A",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "AEFGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 173,
+      "advancingGroups": [
+        "A",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "AEFGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 174,
+      "advancingGroups": [
+        "A",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 175,
+      "advancingGroups": [
+        "A",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADFHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 176,
+      "advancingGroups": [
+        "A",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADFGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 177,
+      "advancingGroups": [
+        "A",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADFGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 178,
+      "advancingGroups": [
+        "A",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ADFGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 179,
+      "advancingGroups": [
+        "A",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ADFGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 180,
+      "advancingGroups": [
+        "A",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ADFGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 181,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADEHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 182,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADEGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 183,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADEGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 184,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ADEGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 185,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ADEGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 186,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ADEGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 187,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADEFIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 188,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADEFHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 189,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ADEFHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 190,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ADEFHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 191,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ADEFHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 192,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ADEFGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 193,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ADEFGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 194,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ADEFGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 195,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ADEFGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 196,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ADEFGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 197,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ADEFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 198,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ADEFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 199,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ADEFGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 200,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ADEFGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 201,
+      "advancingGroups": [
+        "A",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ADEFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 202,
+      "advancingGroups": [
+        "A",
+        "C",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 203,
+      "advancingGroups": [
+        "A",
+        "C",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACFHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 204,
+      "advancingGroups": [
+        "A",
+        "C",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACFGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 205,
+      "advancingGroups": [
+        "A",
+        "C",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACFGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 206,
+      "advancingGroups": [
+        "A",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACFGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 207,
+      "advancingGroups": [
+        "A",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACFGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 208,
+      "advancingGroups": [
+        "A",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACFGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 209,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACEHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 210,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACEGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 211,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACEGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 212,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACEGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 213,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACEGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 214,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACEGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 215,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACEFIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 216,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACEFHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 217,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACEFHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 218,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACEFHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 219,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACEFHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 220,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACEFGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 221,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACEFGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 222,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACEFGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 223,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACEFGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 224,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ACEFGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 225,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ACEFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 226,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ACEFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 227,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ACEFGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 228,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ACEFGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 229,
+      "advancingGroups": [
+        "A",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ACEFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 230,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 231,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 232,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 233,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACDGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 234,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACDGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 235,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACDGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 236,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDFIJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 237,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDFHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 238,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACDFHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "F",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 239,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACDFHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 240,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACDFHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 241,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDFGJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 242,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACDFGIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 243,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACDFGIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 244,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACDFGIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 245,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ACDFGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 246,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ACDFGHJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "H"
+      }
+    },
+    {
+      "id": 247,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ACDFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 248,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ACDFGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 249,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ACDFGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 250,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ACDFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 251,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDEIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 252,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDEHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 253,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACDEHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 254,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACDEHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 255,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACDEHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 256,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDEGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 257,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACDEGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "I",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 258,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACDEGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 259,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACDEGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 260,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ACDEGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 261,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ACDEGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 262,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ACDEGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 263,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ACDEGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 264,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ACDEGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 265,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ACDEGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 266,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ACDEFJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 267,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ACDEFIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "I",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 268,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ACDEFIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 269,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ACDEFIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 270,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ACDEFHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 271,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ACDEFHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 272,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ACDEFHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 273,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ACDEFHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 274,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ACDEFHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 275,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ACDEFHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 276,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "K",
+        "L"
+      ],
+      "key": "ACDEFGKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 277,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "L"
+      ],
+      "key": "ACDEFGJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 278,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K"
+      ],
+      "key": "ACDEFGJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 279,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "L"
+      ],
+      "key": "ACDEFGIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 280,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K"
+      ],
+      "key": "ACDEFGIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "E",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 281,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J"
+      ],
+      "key": "ACDEFGIJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "J",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 282,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "L"
+      ],
+      "key": "ACDEFGHL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "F",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 283,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K"
+      ],
+      "key": "ACDEFGHK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 284,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J"
+      ],
+      "key": "ACDEFGHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "J",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 285,
+      "advancingGroups": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "key": "ACDEFGHI",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "E",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 286,
+      "advancingGroups": [
+        "A",
+        "B",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABGHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 287,
+      "advancingGroups": [
+        "A",
+        "B",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABFHIJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 288,
+      "advancingGroups": [
+        "A",
+        "B",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABFGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 289,
+      "advancingGroups": [
+        "A",
+        "B",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABFGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 290,
+      "advancingGroups": [
+        "A",
+        "B",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABFGHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 291,
+      "advancingGroups": [
+        "A",
+        "B",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABFGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 292,
+      "advancingGroups": [
+        "A",
+        "B",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABFGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 293,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABEHIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 294,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABEGIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 295,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABEGHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 296,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABEGHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 297,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABEGHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "H",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 298,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABEGHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "H",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 299,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABEFIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 300,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABEFHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 301,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABEFHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 302,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABEFHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 303,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABEFHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 304,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABEFGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 305,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABEFGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 306,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABEFGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 307,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABEFGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 308,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABEFGHKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 309,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABEFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 310,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABEFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 311,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABEFGHIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 312,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABEFGHIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 313,
+      "advancingGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABEFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 314,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDHIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 315,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 316,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 317,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABDGHIKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 318,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABDGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 319,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABDGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 320,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDFIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 321,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDFHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 322,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABDFHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "I",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 323,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABDFHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 324,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABDFHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 325,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDFGJKL",
+      "matchups": {
+        "1A": "F",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 326,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABDFGIKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 327,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABDFGIJL",
+      "matchups": {
+        "1A": "F",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 328,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABDFGIJK",
+      "matchups": {
+        "1A": "F",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 329,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABDFGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 330,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABDFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 331,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABDFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 332,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABDFGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 333,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABDFGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 334,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABDFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 335,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDEIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 336,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDEHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 337,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABDEHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 338,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABDEHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 339,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABDEHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 340,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDEGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 341,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABDEGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 342,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABDEGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 343,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABDEGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 344,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABDEGHKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 345,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABDEGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 346,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABDEGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 347,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABDEGHIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 348,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABDEGHIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 349,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABDEGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 350,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABDEFJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 351,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABDEFIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 352,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABDEFIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 353,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABDEFIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 354,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABDEFHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 355,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABDEFHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 356,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABDEFHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 357,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABDEFHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 358,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABDEFHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 359,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABDEFHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 360,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "K",
+        "L"
+      ],
+      "key": "ABDEFGKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 361,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "L"
+      ],
+      "key": "ABDEFGJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 362,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K"
+      ],
+      "key": "ABDEFGJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 363,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "L"
+      ],
+      "key": "ABDEFGIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 364,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K"
+      ],
+      "key": "ABDEFGIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 365,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J"
+      ],
+      "key": "ABDEFGIJ",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 366,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "L"
+      ],
+      "key": "ABDEFGHL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 367,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K"
+      ],
+      "key": "ABDEFGHK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 368,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J"
+      ],
+      "key": "ABDEFGHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 369,
+      "advancingGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "key": "ABDEFGHI",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 370,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCHIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 371,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "G",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCGIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 372,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCGHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 373,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "G",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCGHIKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 374,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCGHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 375,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCGHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 376,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCFIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 377,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCFHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 378,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCFHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 379,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCFHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 380,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCFHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 381,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCFGJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 382,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCFGIKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 383,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCFGIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 384,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCFGIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "F",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 385,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABCFGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 386,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABCFGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 387,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABCFGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 388,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABCFGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 389,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABCFGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 390,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABCFGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 391,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCEIJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "C",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 392,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCEHJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 393,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCEHIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 394,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCEHIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 395,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCEHIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 396,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCEGJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 397,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCEGIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "A",
+        "1G": "I",
+        "1I": "C",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 398,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCEGIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 399,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCEGIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 400,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABCEGHKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 401,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABCEGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 402,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABCEGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 403,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABCEGHIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 404,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABCEGHIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "H",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 405,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABCEGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "G",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 406,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCEFJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 407,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCEFIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 408,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCEFIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 409,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCEFIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 410,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABCEFHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 411,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABCEFHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 412,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABCEFHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 413,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABCEFHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 414,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABCEFHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 415,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABCEFHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 416,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "K",
+        "L"
+      ],
+      "key": "ABCEFGKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 417,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "J",
+        "L"
+      ],
+      "key": "ABCEFGJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 418,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "J",
+        "K"
+      ],
+      "key": "ABCEFGJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 419,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "L"
+      ],
+      "key": "ABCEFGIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 420,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "K"
+      ],
+      "key": "ABCEFGIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 421,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J"
+      ],
+      "key": "ABCEFGIJ",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 422,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "L"
+      ],
+      "key": "ABCEFGHL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 423,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "K"
+      ],
+      "key": "ABCEFGHK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 424,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J"
+      ],
+      "key": "ABCEFGHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 425,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "key": "ABCEFGHI",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 426,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCDIJKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 427,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "H",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCDHJKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 428,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "H",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCDHIKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 429,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "H",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCDHIJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 430,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCDHIJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 431,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCDGJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 432,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCDGIKL",
+      "matchups": {
+        "1A": "I",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 433,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCDGIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 434,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCDGIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "G",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 435,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABCDGHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 436,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABCDGHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 437,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABCDGHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 438,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABCDGHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 439,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABCDGHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 440,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABCDGHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 441,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCDFJKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 442,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCDFIKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "I",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 443,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCDFIJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 444,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCDFIJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 445,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABCDFHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "F",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 446,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABCDFHJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "H"
+      }
+    },
+    {
+      "id": 447,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABCDFHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 448,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABCDFHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "F",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 449,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABCDFHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "F",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 450,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABCDFHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 451,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "K",
+        "L"
+      ],
+      "key": "ABCDFGKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 452,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "J",
+        "L"
+      ],
+      "key": "ABCDFGJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 453,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "J",
+        "K"
+      ],
+      "key": "ABCDFGJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 454,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "L"
+      ],
+      "key": "ABCDFGIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 455,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "K"
+      ],
+      "key": "ABCDFGIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 456,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "I",
+        "J"
+      ],
+      "key": "ABCDFGIJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 457,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "L"
+      ],
+      "key": "ABCDFGHL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "H"
+      }
+    },
+    {
+      "id": 458,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "K"
+      ],
+      "key": "ABCDFGHK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 459,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "J"
+      ],
+      "key": "ABCDFGHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 460,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "key": "ABCDFGHI",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 461,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "J",
+        "K",
+        "L"
+      ],
+      "key": "ABCDEJKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 462,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "I",
+        "K",
+        "L"
+      ],
+      "key": "ABCDEIKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "I",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 463,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "I",
+        "J",
+        "L"
+      ],
+      "key": "ABCDEIJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 464,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "I",
+        "J",
+        "K"
+      ],
+      "key": "ABCDEIJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 465,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "K",
+        "L"
+      ],
+      "key": "ABCDEHKL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 466,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "J",
+        "L"
+      ],
+      "key": "ABCDEHJL",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 467,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "J",
+        "K"
+      ],
+      "key": "ABCDEHJK",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 468,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "L"
+      ],
+      "key": "ABCDEHIL",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 469,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "K"
+      ],
+      "key": "ABCDEHIK",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 470,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "H",
+        "I",
+        "J"
+      ],
+      "key": "ABCDEHIJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 471,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "K",
+        "L"
+      ],
+      "key": "ABCDEGKL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 472,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "J",
+        "L"
+      ],
+      "key": "ABCDEGJL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 473,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "J",
+        "K"
+      ],
+      "key": "ABCDEGJK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "J",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 474,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "L"
+      ],
+      "key": "ABCDEGIL",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 475,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "K"
+      ],
+      "key": "ABCDEGIK",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 476,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "I",
+        "J"
+      ],
+      "key": "ABCDEGIJ",
+      "matchups": {
+        "1A": "E",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "I",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 477,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "L"
+      ],
+      "key": "ABCDEGHL",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 478,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "K"
+      ],
+      "key": "ABCDEGHK",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 479,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "J"
+      ],
+      "key": "ABCDEGHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 480,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I"
+      ],
+      "key": "ABCDEGHI",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 481,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "K",
+        "L"
+      ],
+      "key": "ABCDEFKL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 482,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "J",
+        "L"
+      ],
+      "key": "ABCDEFJL",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 483,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "J",
+        "K"
+      ],
+      "key": "ABCDEFJK",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 484,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "L"
+      ],
+      "key": "ABCDEFIL",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 485,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "K"
+      ],
+      "key": "ABCDEFIK",
+      "matchups": {
+        "1A": "C",
+        "1B": "E",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "I",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 486,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "I",
+        "J"
+      ],
+      "key": "ABCDEFIJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "J",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 487,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "L"
+      ],
+      "key": "ABCDEFHL",
+      "matchups": {
+        "1A": "H",
+        "1B": "F",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "D",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 488,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "K"
+      ],
+      "key": "ABCDEFHK",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 489,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "J"
+      ],
+      "key": "ABCDEFHJ",
+      "matchups": {
+        "1A": "H",
+        "1B": "J",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 490,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "H",
+        "I"
+      ],
+      "key": "ABCDEFHI",
+      "matchups": {
+        "1A": "H",
+        "1B": "E",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 491,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "L"
+      ],
+      "key": "ABCDEFGL",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "L",
+        "1L": "E"
+      }
+    },
+    {
+      "id": 492,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "K"
+      ],
+      "key": "ABCDEFGK",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "K"
+      }
+    },
+    {
+      "id": 493,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J"
+      ],
+      "key": "ABCDEFGJ",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "J"
+      }
+    },
+    {
+      "id": 494,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I"
+      ],
+      "key": "ABCDEFGI",
+      "matchups": {
+        "1A": "C",
+        "1B": "G",
+        "1D": "B",
+        "1E": "D",
+        "1G": "A",
+        "1I": "F",
+        "1K": "E",
+        "1L": "I"
+      }
+    },
+    {
+      "id": 495,
+      "advancingGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "key": "ABCDEFGH",
+      "matchups": {
+        "1A": "H",
+        "1B": "G",
+        "1D": "B",
+        "1E": "C",
+        "1G": "A",
+        "1I": "F",
+        "1K": "D",
+        "1L": "E"
+      }
+    }
+  ]
+}

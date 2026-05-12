@@ -1,0 +1,90 @@
+{
+  "_note": "Bracket seeding for the 2026 48-team knockout. Third-place R32 slots use { kind: 'thirdPlace', host: <A|B|D|E|G|I|K|L> }; the host letter matches the home group winner and is the lookup key into src/data/thirdPlaceCombinations.json (the FIFA combinations table).",
+  "r32": {
+    "R32-1": {
+      "home": { "kind": "groupRank", "group": "E", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "E" }
+    },
+    "R32-2": {
+      "home": { "kind": "groupRank", "group": "I", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "I" }
+    },
+    "R32-3": {
+      "home": { "kind": "groupRank", "group": "A", "rank": 2 },
+      "away": { "kind": "groupRank", "group": "B", "rank": 2 }
+    },
+    "R32-4": {
+      "home": { "kind": "groupRank", "group": "F", "rank": 1 },
+      "away": { "kind": "groupRank", "group": "C", "rank": 2 }
+    },
+    "R32-5": {
+      "home": { "kind": "groupRank", "group": "K", "rank": 2 },
+      "away": { "kind": "groupRank", "group": "L", "rank": 2 }
+    },
+    "R32-6": {
+      "home": { "kind": "groupRank", "group": "H", "rank": 1 },
+      "away": { "kind": "groupRank", "group": "J", "rank": 2 }
+    },
+    "R32-7": {
+      "home": { "kind": "groupRank", "group": "D", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "D" }
+    },
+    "R32-8": {
+      "home": { "kind": "groupRank", "group": "G", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "G" }
+    },
+    "R32-9": {
+      "home": { "kind": "groupRank", "group": "C", "rank": 1 },
+      "away": { "kind": "groupRank", "group": "F", "rank": 2 }
+    },
+    "R32-10": {
+      "home": { "kind": "groupRank", "group": "E", "rank": 2 },
+      "away": { "kind": "groupRank", "group": "I", "rank": 2 }
+    },
+    "R32-11": {
+      "home": { "kind": "groupRank", "group": "A", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "A" }
+    },
+    "R32-12": {
+      "home": { "kind": "groupRank", "group": "L", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "L" }
+    },
+    "R32-13": {
+      "home": { "kind": "groupRank", "group": "J", "rank": 1 },
+      "away": { "kind": "groupRank", "group": "H", "rank": 2 }
+    },
+    "R32-14": {
+      "home": { "kind": "groupRank", "group": "D", "rank": 2 },
+      "away": { "kind": "groupRank", "group": "G", "rank": 2 }
+    },
+    "R32-15": {
+      "home": { "kind": "groupRank", "group": "B", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "B" }
+    },
+    "R32-16": {
+      "home": { "kind": "groupRank", "group": "K", "rank": 1 },
+      "away": { "kind": "thirdPlace", "host": "K" }
+    }
+  },
+  "r16": {
+    "R16-1": ["R32-1", "R32-2"],
+    "R16-2": ["R32-3", "R32-4"],
+    "R16-3": ["R32-5", "R32-6"],
+    "R16-4": ["R32-7", "R32-8"],
+    "R16-5": ["R32-9", "R32-10"],
+    "R16-6": ["R32-11", "R32-12"],
+    "R16-7": ["R32-13", "R32-14"],
+    "R16-8": ["R32-15", "R32-16"]
+  },
+  "qf": {
+    "QF-1": ["R16-1", "R16-2"],
+    "QF-2": ["R16-3", "R16-4"],
+    "QF-3": ["R16-5", "R16-6"],
+    "QF-4": ["R16-7", "R16-8"]
+  },
+  "sf": {
+    "SF-1": ["QF-1", "QF-2"],
+    "SF-2": ["QF-3", "QF-4"]
+  },
+  "f": ["SF-1", "SF-2"]
+}

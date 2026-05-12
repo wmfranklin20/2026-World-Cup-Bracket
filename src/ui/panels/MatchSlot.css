@@ -1,0 +1,47 @@
+.match-slot {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+  min-width: 180px;
+}
+
+.match-slot__id {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.match-slot__sides {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.match-slot__side {
+  display: block;
+  text-align: left;
+  width: 100%;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  padding: 0;
+  transition: transform var(--transition-fast);
+}
+
+.match-slot__side:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.match-slot__side--winner .team-row {
+  border-width: 2px;
+}
+
+.match-slot__side--readonly {
+  cursor: default;
+}

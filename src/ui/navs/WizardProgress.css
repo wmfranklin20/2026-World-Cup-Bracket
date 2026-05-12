@@ -1,0 +1,97 @@
+.wizard-progress {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-5);
+}
+
+.wizard-progress__item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: var(--space-2);
+  position: relative;
+  min-width: 0;
+}
+
+.wizard-progress__item:not(:last-child)::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--color-border-strong);
+  margin: 0 var(--space-3);
+  border-radius: 1px;
+}
+
+.wizard-progress__item--complete:not(:last-child)::after,
+.wizard-progress__item--current:not(:last-child)::after {
+  background: var(--accent-one);
+}
+
+.wizard-progress__dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+  border: 2px solid var(--color-border-strong);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-heading);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.wizard-progress__dot:not(:disabled):hover {
+  border-color: var(--accent-one);
+  color: var(--color-text);
+}
+
+.wizard-progress__dot:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.wizard-progress__item--current .wizard-progress__dot {
+  background: var(--accent-one);
+  color: var(--color-text-inverse);
+  border-color: var(--accent-one);
+}
+
+.wizard-progress__item--complete .wizard-progress__dot {
+  background: var(--accent-two);
+  color: var(--color-text-inverse);
+  border-color: var(--accent-two);
+}
+
+.wizard-progress__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wizard-progress__item--current .wizard-progress__label,
+.wizard-progress__item--complete .wizard-progress__label {
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .wizard-progress {
+    padding: var(--space-3);
+    gap: var(--space-2);
+  }
+  .wizard-progress__item:not(:last-child)::after {
+    margin: 0 var(--space-1);
+  }
+  .wizard-progress__label {
+    display: none;
+  }
+}

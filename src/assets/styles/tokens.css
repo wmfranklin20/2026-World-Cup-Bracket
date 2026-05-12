@@ -1,0 +1,109 @@
+:root {
+  /* Palette — neutrals */
+  --gray-one: #ffffff;
+  --gray-two: #f6f6f7;
+  --gray-three: #ecedf0;
+  --gray-four: #d8dade;
+  --gray-five: #a7abb3;
+  --gray-six: #6b6f78;
+  --gray-seven: #3a3d44;
+  --gray-eight: #16181c;
+
+  /* Palette — brand */
+  --navy-one: #e0ecf6;
+  --navy-two: #7fa3c6;
+  --navy-three: #044a80;
+  --navy-four: #033560;
+  --green-one: #e0f5ec;
+  --green-two: #74cfa5;
+  --green-three: #00b386;
+  --green-four: #057153;
+  --blue-one: #e6effa;
+  --blue-two: #6b9adf;
+  --blue-three: #2563c8;
+  --blue-four: #1a3f80;
+  --amber-one: #fdf0d3;
+  --amber-two: #f1c14d;
+  --amber-three: #d49016;
+
+  /* Semantic — colors */
+  --color-bg: var(--gray-two);
+  --color-surface: var(--gray-one);
+  --color-surface-2: var(--gray-two);
+  --color-border: var(--gray-three);
+  --color-border-strong: var(--gray-four);
+  --color-text: var(--gray-eight);
+  --color-text-muted: var(--gray-six);
+  --color-text-inverse: var(--gray-one);
+
+  --accent-one: var(--navy-three);
+  --accent-one-hover: var(--navy-four);
+  --accent-one-soft: var(--navy-one);
+  --accent-two: var(--green-three);
+  --accent-two-hover: var(--green-four);
+  --accent-two-soft: var(--green-one);
+
+  --color-success: var(--green-three);
+  --color-warning: var(--amber-three);
+  --color-danger: #d20a11;
+
+  /* Semantic — bracket */
+  --team-row-bg: var(--gray-one);
+  --team-row-bg-hover: var(--gray-two);
+  --team-row-bg-picked: var(--green-one);
+  --team-row-border-picked: var(--green-three);
+  --team-row-bg-eliminated: var(--gray-two);
+  --team-row-fg-eliminated: var(--gray-five);
+  --team-row-bg-dragging: var(--blue-one);
+  --team-row-indicator-above: var(--blue-three);
+  --team-row-indicator-below: var(--blue-three);
+
+  --bracket-line: var(--gray-four);
+  --bracket-line-active: var(--green-three);
+
+  --group-card-bg: var(--gray-one);
+  --group-card-header-bg: var(--gray-eight);
+  --group-card-header-fg: var(--gray-one);
+
+  /* Typography */
+  --font-sans: 'Outfit', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-weight-body: 300;
+  --font-weight-heading: 600;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.75rem;
+  --font-size-3xl: 2.25rem;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  /* Shell dims */
+  --header-height: 56px;
+  --footer-height: 64px;
+  --content-max-width: 1280px;
+
+  /* Effects */
+  --shadow-card: 0 1px 2px rgba(8, 6, 13, 0.04), 0 4px 12px rgba(8, 6, 13, 0.06);
+  --shadow-elevated: 0 6px 20px rgba(8, 6, 13, 0.12);
+  --transition-fast: 120ms ease;
+  --transition-med: 200ms ease;
+
+  color-scheme: light only;
+}

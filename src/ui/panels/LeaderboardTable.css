@@ -1,0 +1,66 @@
+.leaderboard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.leaderboard__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-md);
+}
+
+.leaderboard__table th,
+.leaderboard__table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.leaderboard__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.leaderboard__table th {
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.leaderboard__rank-col {
+  width: 56px;
+  text-align: center !important;
+}
+
+.leaderboard__score-col {
+  width: 80px;
+  text-align: right !important;
+}
+
+.leaderboard__date-col {
+  width: 140px;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.leaderboard__name {
+  font-weight: var(--font-weight-heading);
+}
+
+.leaderboard__empty {
+  padding: var(--space-7);
+  text-align: center;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .leaderboard__date-col {
+    display: none;
+  }
+}

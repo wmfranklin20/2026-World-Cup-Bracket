@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="chevron-left" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 6l-6 6 6 6"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6l6 6-6 6"/>
+  </symbol>
+  <symbol id="chevron-down" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/>
+  </symbol>
+  <symbol id="check" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 12l5 5L20 7"/>
+  </symbol>
+  <symbol id="drag-handle" viewBox="0 0 24 24">
+    <circle cx="9" cy="6" r="1.5" fill="currentColor"/>
+    <circle cx="15" cy="6" r="1.5" fill="currentColor"/>
+    <circle cx="9" cy="12" r="1.5" fill="currentColor"/>
+    <circle cx="15" cy="12" r="1.5" fill="currentColor"/>
+    <circle cx="9" cy="18" r="1.5" fill="currentColor"/>
+    <circle cx="15" cy="18" r="1.5" fill="currentColor"/>
+  </symbol>
+  <symbol id="trophy" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M7 4h10v5a5 5 0 01-10 0V4z"/>
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M17 6h3v2a3 3 0 01-3 3M7 6H4v2a3 3 0 003 3M9 19h6M12 14v5"/>
+  </symbol>
+  <symbol id="x-mark" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 6l12 12M18 6L6 18"/>
+  </symbol>
+</svg>

@@ -1,0 +1,33 @@
+.text-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.text-input__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.text-input__field {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  transition: border-color var(--transition-fast);
+}
+
+.text-input__field:focus {
+  outline: none;
+  border-color: var(--accent-one);
+}
+
+.text-input__hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}

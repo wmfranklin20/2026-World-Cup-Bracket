@@ -1,0 +1,341 @@
+{
+  "_note": "48-team list — update with the confirmed 2026 World Cup qualifiers. Flags point to /flags/<id>.png in public/flags.",
+  "teams": [
+    {
+      "id": "MEX",
+      "name": "Mexico",
+      "code": "MEX",
+      "flag": "/flags/MEX.png",
+      "confederation": "CONCACAF"
+    },
+    {
+      "id": "RSA",
+      "name": "South Africa",
+      "code": "RSA",
+      "flag": "/flags/RSA.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "KOR",
+      "name": "South Korea",
+      "code": "KOR",
+      "flag": "/flags/KOR.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "CZE",
+      "name": "Czechia",
+      "code": "CZE",
+      "flag": "/flags/CZE.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "CAN",
+      "name": "Canada",
+      "code": "CAN",
+      "flag": "/flags/CAN.png",
+      "confederation": "CONCACAF"
+    },
+    {
+      "id": "BIH",
+      "name": "Boznia & Herzegovina",
+      "code": "BIH",
+      "flag": "/flags/BIH.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "QAT",
+      "name": "Qatar",
+      "code": "QAT",
+      "flag": "/flags/QAT.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "SUI",
+      "name": "Switzerland",
+      "code": "SUI",
+      "flag": "/flags/SUI.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "BRA",
+      "name": "Brazil",
+      "code": "BRA",
+      "flag": "/flags/BRA.png",
+      "confederation": "CONMEBOL"
+    },
+    {
+      "id": "MAR",
+      "name": "Morocco",
+      "code": "MAR",
+      "flag": "/flags/MAR.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "HAI",
+      "name": "Haiti",
+      "code": "HAI",
+      "flag": "/flags/HAI.png",
+      "confederation": "CONCACAF"
+    },
+    {
+      "id": "SCO",
+      "name": "Scotland",
+      "code": "SCO",
+      "flag": "/flags/SCO.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "USA",
+      "name": "United States",
+      "code": "USA",
+      "flag": "/flags/USA.png",
+      "confederation": "CONCACAF"
+    },
+    {
+      "id": "PAR",
+      "name": "Paraguay",
+      "code": "PAR",
+      "flag": "/flags/PAR.png",
+      "confederation": "CONMEBOL"
+    },
+    {
+      "id": "AUS",
+      "name": "Australia",
+      "code": "AUS",
+      "flag": "/flags/AUS.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "TUR",
+      "name": "Turkiye",
+      "code": "TUR",
+      "flag": "/flags/TUR.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "GER",
+      "name": "Germany",
+      "code": "GER",
+      "flag": "/flags/GER.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "CUW",
+      "name": "Curacao",
+      "code": "CUW",
+      "flag": "/flags/CUW.png",
+      "confederation": "CONCACAF"
+    },
+    {
+      "id": "CIV",
+      "name": "Ivory Coast",
+      "code": "CIV",
+      "flag": "/flags/CIV.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "ECU",
+      "name": "Ecuador",
+      "code": "ECU",
+      "flag": "/flags/ECU.png",
+      "confederation": "CONMEBOL"
+    },
+    {
+      "id": "NED",
+      "name": "Netherlands",
+      "code": "NED",
+      "flag": "/flags/NED.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "JPN",
+      "name": "Japan",
+      "code": "JPN",
+      "flag": "/flags/JPN.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "SWE",
+      "name": "Sweden",
+      "code": "SWE",
+      "flag": "/flags/SWE.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "TUN",
+      "name": "Tunisia",
+      "code": "TUN",
+      "flag": "/flags/TUN.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "BEL",
+      "name": "Belgium",
+      "code": "BEL",
+      "flag": "/flags/BEL.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "EGY",
+      "name": "Egypt",
+      "code": "EGY",
+      "flag": "/flags/EGY.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "IRN",
+      "name": "Iran",
+      "code": "IRN",
+      "flag": "/flags/IRN.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "NZL",
+      "name": "New Zealand",
+      "code": "NZL",
+      "flag": "/flags/NZL.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "ESP",
+      "name": "Spain",
+      "code": "ESP",
+      "flag": "/flags/ESP.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "CPV",
+      "name": "Cape Verde",
+      "code": "CPV",
+      "flag": "/flags/CPV.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "KSA",
+      "name": "Saudi Arabia",
+      "code": "KSA",
+      "flag": "/flags/KSA.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "URU",
+      "name": "Uruguay",
+      "code": "URU",
+      "flag": "/flags/URU.png",
+      "confederation": "CONMEBOL"
+    },
+    {
+      "id": "FRA",
+      "name": "France",
+      "code": "FRA",
+      "flag": "/flags/FRA.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "SEN",
+      "name": "Senegal",
+      "code": "SEN",
+      "flag": "/flags/SEN.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "IRQ",
+      "name": "Iraq",
+      "code": "IRQ",
+      "flag": "/flags/IRQ.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "NOR",
+      "name": "Norway",
+      "code": "NOR",
+      "flag": "/flags/NOR.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "ARG",
+      "name": "Argentina",
+      "code": "ARG",
+      "flag": "/flags/ARG.png",
+      "confederation": "CONMEBOL"
+    },
+    {
+      "id": "ALG",
+      "name": "Algeria",
+      "code": "ALG",
+      "flag": "/flags/ALG.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "AUT",
+      "name": "Austria",
+      "code": "AUT",
+      "flag": "/flags/AUT.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "JOR",
+      "name": "Jordan",
+      "code": "JOR",
+      "flag": "/flags/JOR.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "POR",
+      "name": "Portugal",
+      "code": "POR",
+      "flag": "/flags/POR.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "COD",
+      "name": "DR Congo",
+      "code": "COD",
+      "flag": "/flags/COD.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "UZB",
+      "name": "Uzbekistan",
+      "code": "UZB",
+      "flag": "/flags/UZB.png",
+      "confederation": "AFC"
+    },
+    {
+      "id": "COL",
+      "name": "Columbia",
+      "code": "COL",
+      "flag": "/flags/COL.png",
+      "confederation": "CONMEBOL"
+    },
+    {
+      "id": "ENG",
+      "name": "England",
+      "code": "ENG",
+      "flag": "/flags/ENG.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "CRO",
+      "name": "Croatia",
+      "code": "CRO",
+      "flag": "/flags/CRO.png",
+      "confederation": "UEFA"
+    },
+    {
+      "id": "GHA",
+      "name": "Ghana",
+      "code": "GHA",
+      "flag": "/flags/GHA.png",
+      "confederation": "CAF"
+    },
+    {
+      "id": "PAN",
+      "name": "Panama",
+      "code": "PAN",
+      "flag": "/flags/PAN.png",
+      "confederation": "CONCACAF"
+    }
+  ]
+}
