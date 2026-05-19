@@ -33,3 +33,9 @@ firestore.indexes.json
 scripts/backups/
 scripts/.serviceaccount*.json
 *.serviceaccount.json
+
+# Per-developer Claude Code settings (project-shared settings.json stays tracked)
+.claude/settings.local.json
+
+# Firebase Hosting deploy cache
+.firebase/
