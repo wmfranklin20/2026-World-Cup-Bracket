@@ -2,10 +2,14 @@ import type {
   ActivePage,
   AppState,
   BracketDraft,
+  DraftSlot,
   GroupId,
   GroupPicks,
+  Identity,
   MatchId,
+  OverlayKind,
   TeamId,
+  ViewingBracket,
   WizardStep,
 } from '../types/domain';
 import { GROUP_IDS } from '../types/domain';
@@ -31,19 +35,61 @@ export type Action =
   | { type: 'TOGGLE_THIRD_PLACE'; group: GroupId }
   | { type: 'SET_KNOCKOUT_WINNER'; matchId: MatchId; teamId: TeamId | null }
   | { type: 'SET_FINAL_SCORE'; home: number | null; away: number | null }
-  | { type: 'SET_DISPLAY_NAME'; name: string }
+  | { type: 'SET_BRACKET_NAME'; name: string; slot?: DraftSlot }
+  | { type: 'SET_ACTIVE_DRAFT'; slot: DraftSlot }
+  | { type: 'SET_IDENTITY'; identity: Identity }
+  | { type: 'OPEN_BRACKET_VIEW'; view: ViewingBracket }
+  | { type: 'CLOSE_BRACKET_VIEW' }
+  | { type: 'MARK_SUBMITTED' }
+  | { type: 'SET_OVERLAY'; overlay: OverlayKind | null }
   | { type: 'SET_TOAST'; message: string | null }
   | { type: 'SET_SUBMISSION_STATUS'; status: AppState['submission'] }
   | { type: 'RESET' };
 
-export function createInitialState(draftOverride?: BracketDraft): AppState {
+export function createInitialState(opts?: {
+  drafts?: [BracketDraft, BracketDraft];
+  activeDraftSlot?: DraftSlot;
+  submittedSlots?: [boolean, boolean];
+  identity?: Identity | null;
+}): AppState {
+  const identity = opts?.identity ?? null;
+  const drafts: [BracketDraft, BracketDraft] = opts?.drafts ?? [
+    createInitialDraft(),
+    createInitialDraft(),
+  ];
+  const activeDraftSlot: DraftSlot = opts?.activeDraftSlot ?? 0;
+  const submittedSlots: [boolean, boolean] = opts?.submittedSlots ?? [
+    false,
+    false,
+  ];
   return {
-    activePage: 'bracket',
+    activePage: identity ? 'bracket' : 'intro',
     currentStep: 'groups',
-    draft: draftOverride ?? createInitialDraft(),
-    submission: { status: 'idle' },
+    identity,
+    draft: drafts[activeDraftSlot],
+    drafts,
+    activeDraftSlot,
+    submittedSlots,
+    submission: {
+      status: submittedSlots[activeDraftSlot] ? 'submitted' : 'idle',
+    },
     toast: null,
+    overlay: null,
+    viewingBracket: null,
   };
+}
+
+function withActiveDraft(
+  state: AppState,
+  nextDraft: BracketDraft,
+  extras: Partial<AppState> = {},
+): AppState {
+  const drafts: [BracketDraft, BracketDraft] = [...state.drafts] as [
+    BracketDraft,
+    BracketDraft,
+  ];
+  drafts[state.activeDraftSlot] = nextDraft;
+  return { ...state, draft: nextDraft, drafts, ...extras };
 }
 
 function reorderGroup(
@@ -133,7 +179,7 @@ function toggleThirdPlace(
 export function appReducer(state: AppState, action: Action): AppState {
   switch (action.type) {
     case 'SET_ACTIVE_PAGE':
-      return { ...state, activePage: action.page };
+      return { ...state, activePage: action.page, viewingBracket: null };
 
     case 'SET_STEP':
       return { ...state, currentStep: action.step };
@@ -147,26 +193,22 @@ export function appReducer(state: AppState, action: Action): AppState {
       );
       if (nextPicks === state.draft.groupPicks) return state;
       const pruned = applyPrune({ ...state.draft, groupPicks: nextPicks });
-      return {
-        ...state,
-        draft: pruned.draft,
+      return withActiveDraft(state, pruned.draft, {
         toast: pruned.cleared
           ? 'Some later picks were reset because the group changed.'
           : state.toast,
-      };
+      });
     }
 
     case 'TOGGLE_THIRD_PLACE': {
       const nextDraft = toggleThirdPlace(state.draft, action.group);
       if (nextDraft === state.draft) return state;
       const pruned = applyPrune(nextDraft);
-      return {
-        ...state,
-        draft: pruned.draft,
+      return withActiveDraft(state, pruned.draft, {
         toast: pruned.cleared
           ? 'Some later picks were reset because the 3rd-place lineup changed.'
           : state.toast,
-      };
+      });
     }
 
     case 'SET_KNOCKOUT_WINNER': {
@@ -187,29 +229,93 @@ export function appReducer(state: AppState, action: Action): AppState {
           : state.draft.finalScore,
       };
       const pruned = applyPrune(intermediate);
-      return {
-        ...state,
-        draft: pruned.draft,
+      return withActiveDraft(state, pruned.draft, {
         toast: pruned.cleared
           ? 'Some later picks were reset because a winner changed.'
           : state.toast,
-      };
+      });
     }
 
     case 'SET_FINAL_SCORE':
+      return withActiveDraft(state, {
+        ...state.draft,
+        finalScore: { home: action.home, away: action.away },
+      });
+
+    case 'SET_BRACKET_NAME': {
+      if (action.slot !== undefined && action.slot !== state.activeDraftSlot) {
+        const drafts: [BracketDraft, BracketDraft] = [...state.drafts] as [
+          BracketDraft,
+          BracketDraft,
+        ];
+        drafts[action.slot] = {
+          ...drafts[action.slot],
+          bracketName: action.name,
+        };
+        return { ...state, drafts };
+      }
+      return withActiveDraft(state, {
+        ...state.draft,
+        bracketName: action.name,
+      });
+    }
+
+    case 'SET_ACTIVE_DRAFT': {
+      if (action.slot === state.activeDraftSlot) return state;
+      const nextSlot = action.slot;
       return {
         ...state,
-        draft: {
-          ...state.draft,
-          finalScore: { home: action.home, away: action.away },
+        activeDraftSlot: nextSlot,
+        draft: state.drafts[nextSlot],
+        currentStep: 'groups',
+        submission: {
+          status: state.submittedSlots[nextSlot] ? 'submitted' : 'idle',
         },
+        overlay: null,
+      };
+    }
+
+    case 'SET_IDENTITY':
+      return {
+        ...state,
+        identity: action.identity,
+        activePage:
+          state.activePage === 'intro' ? 'bracket' : state.activePage,
       };
 
-    case 'SET_DISPLAY_NAME':
+    case 'OPEN_BRACKET_VIEW':
       return {
         ...state,
-        draft: { ...state.draft, displayName: action.name },
+        viewingBracket: action.view,
+        activePage: 'bracket',
+        overlay: null,
+        currentStep: 'groups',
       };
+
+    case 'CLOSE_BRACKET_VIEW':
+      return { ...state, viewingBracket: null };
+
+    case 'SET_OVERLAY':
+      return { ...state, overlay: action.overlay };
+
+    case 'MARK_SUBMITTED': {
+      const submittedSlots: [boolean, boolean] = [...state.submittedSlots] as [
+        boolean,
+        boolean,
+      ];
+      submittedSlots[state.activeDraftSlot] = true;
+      return {
+        ...state,
+        submission: { status: 'submitted' },
+        submittedSlots,
+        identity: state.identity
+          ? {
+              ...state.identity,
+              submittedCount: state.identity.submittedCount + 1,
+            }
+          : state.identity,
+      };
+    }
 
     case 'SET_TOAST':
       return { ...state, toast: action.message };

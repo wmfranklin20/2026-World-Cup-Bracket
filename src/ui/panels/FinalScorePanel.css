@@ -85,12 +85,13 @@
   padding: var(--space-1) 0;
 }
 
-.final-panel__warning {
-  margin-top: var(--space-2);
-  padding: var(--space-2) var(--space-3);
-  background: var(--accent-one-soft);
-  color: var(--color-danger);
-  border-radius: var(--radius-md);
-  font-size: var(--font-size-xs);
+.final-panel__readout {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-heading);
+  color: var(--color-text);
+  line-height: 1;
+  padding: var(--space-1) 0;
+  min-width: 34px;
   text-align: center;
 }
+

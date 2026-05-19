@@ -144,50 +144,93 @@ export type GroupPicks = Record<GroupId, [TeamId, TeamId, TeamId, TeamId]>;
 
 export interface BracketDraft {
   schemaVersion: 1;
-  displayName: string;
+  bracketName: string;
   groupPicks: GroupPicks;
   thirdPlaceAdvancers: GroupId[];
   knockoutPicks: Partial<Record<MatchId, TeamId>>;
   finalScore: { home: number | null; away: number | null };
 }
 
-export type WizardStep =
-  | 'groups'
-  | 'knockout'
-  | 'review';
+export interface Identity {
+  displayName: string;
+  email: string;
+  submittedCount: number;
+}
 
-export const WIZARD_STEPS: readonly WizardStep[] = [
-  'groups',
-  'knockout',
-  'review',
-];
+export type WizardStep = 'groups' | 'knockout';
+
+export const WIZARD_STEPS: readonly WizardStep[] = ['groups', 'knockout'];
 
 export const WIZARD_STEP_LABEL: Record<WizardStep, string> = {
   groups: 'Groups',
   knockout: 'Bracket',
-  review: 'Review',
 };
 
-export type ActivePage = 'bracket' | 'leaderboard';
+export type ActivePage = 'intro' | 'bracket' | 'leaderboard';
 
 export interface SubmissionState {
   status: 'idle' | 'submitting' | 'submitted' | 'error';
   error?: string;
 }
 
+export type OverlayKind = 'submit-confirm' | 'post-submit';
+
+export type DraftSlot = 0 | 1;
+
+export interface ViewingBracket {
+  docId: string;
+  ownerDisplayName: string;
+  bracketName: string;
+  draft: BracketDraft;
+}
+
 export interface AppState {
   activePage: ActivePage;
   currentStep: WizardStep;
+  identity: Identity | null;
   draft: BracketDraft;
+  drafts: [BracketDraft, BracketDraft];
+  activeDraftSlot: DraftSlot;
+  submittedSlots: [boolean, boolean];
   submission: SubmissionState;
   toast: string | null;
+  overlay: OverlayKind | null;
+  viewingBracket: ViewingBracket | null;
+}
+
+export interface ResultsBracket {
+  schemaVersion: 1;
+  groupResults: Partial<Record<GroupId, [TeamId, TeamId, TeamId, TeamId]>>;
+  groupDecided: Partial<Record<GroupId, boolean>>;
+  thirdPlaceAdvancers: GroupId[] | null;
+  knockoutResults: Partial<Record<MatchId, TeamId>>;
+  matchDecided: Partial<Record<MatchId, boolean>>;
+  finalScore: { home: number | null; away: number | null };
+  finalDecided: boolean;
+  updatedAt: number;
 }
 
 export interface LeaderboardEntry {
   rank: number;
+  docId: string;
+  ownerUid: string;
   displayName: string;
+  finalPickTeamId: TeamId | null;
   score: number;
-  submittedAt: string;
+  potentialRemaining: number;
+  accuracy: number;
+  decisionsCount: number;
+  finalScoreBonus: number;
+  submittedAt: number;
+  groupPoints: number;
+  r32Points: number;
+  r16Points: number;
+  qfPoints: number;
+  sfPoints: number;
+  fPoints: number;
+  finalScoreHome: number | null;
+  finalScoreAway: number | null;
+  bracketName: string;
 }
 
 export interface ResolvedMatchup {

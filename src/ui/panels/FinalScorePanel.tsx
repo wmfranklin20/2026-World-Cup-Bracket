@@ -1,62 +1,91 @@
 import { useAppState } from '../../hooks/useAppState';
 import { resolveFinal } from '../../lib/bracketSeeding';
 import { teamName } from '../../lib/teamLookup';
+import type { BracketDraft } from '../../types/domain';
 import { Stepper } from '../buttons/Stepper';
 import { TeamRow } from '../displays/TeamRow';
 import './FinalScorePanel.css';
 
-export function FinalScorePanel() {
-  const { state, dispatch } = useAppState();
-  const final = resolveFinal(state.draft);
-  const { home, away } = state.draft.finalScore;
+interface Props {
+  draft: BracketDraft;
+  readOnly?: boolean;
+}
 
-  if (!final.home || !final.away) {
-    return (
-      <div className="final-panel final-panel--empty">
-        <h2>Final score</h2>
-        <p>
-          Pick winners through to the Final before predicting the score. The
-          two finalists will appear here.
-        </p>
-      </div>
-    );
-  }
+export function FinalScorePanel({ draft, readOnly = false }: Props) {
+  const { dispatch } = useAppState();
+  const final = resolveFinal(draft);
+  const { home: homeScore, away: awayScore } = draft.finalScore;
+  const finalWinner = draft.knockoutPicks.F ?? null;
 
-  const homeName = teamName(final.home);
-  const awayName = teamName(final.away);
+  if (!final.home || !final.away || !finalWinner) return null;
+
+  const homeIsWinner = finalWinner === final.home;
+  const winnerScore = homeIsWinner ? (homeScore ?? 0) : (awayScore ?? 0);
+
+  const setHome = (v: number) => {
+    let nextAway = awayScore ?? 0;
+    if (homeIsWinner && nextAway > v) nextAway = v;
+    dispatch({ type: 'SET_FINAL_SCORE', home: v, away: nextAway });
+  };
+  const setAway = (v: number) => {
+    let nextHome = homeScore ?? 0;
+    if (!homeIsWinner && nextHome > v) nextHome = v;
+    dispatch({ type: 'SET_FINAL_SCORE', home: nextHome, away: v });
+  };
 
   return (
     <div className="final-panel">
-      <h2>Predict the final score</h2>
-      <p className="final-panel__sub">
-        Used as a tiebreaker when scoring leaderboard rankings.
-      </p>
+      <h2>Final Score Prediction</h2>
+      {!readOnly && (
+        <p className="final-panel__sub">
+          Set the winner's score first — the runner-up can't outscore them.
+          Tied scores go to penalties.
+        </p>
+      )}
       <div className="final-panel__board">
-        <TeamRow teamId={final.home} variant="picked" />
+        <TeamRow
+          teamId={final.home}
+          variant={homeIsWinner ? 'picked' : 'default'}
+        />
         <div className="final-panel__sep" aria-hidden="true">
           v
         </div>
-        <TeamRow teamId={final.away} variant="picked" />
-        <Stepper
-          label={homeName}
-          value={home}
-          onChange={(v) =>
-            dispatch({ type: 'SET_FINAL_SCORE', home: v, away: away ?? 0 })
-          }
+        <TeamRow
+          teamId={final.away}
+          variant={!homeIsWinner ? 'picked' : 'default'}
         />
-        <Stepper
-          label={awayName}
-          value={away}
-          onChange={(v) =>
-            dispatch({ type: 'SET_FINAL_SCORE', home: home ?? 0, away: v })
-          }
-        />
+        {readOnly ? (
+          <>
+            <div
+              className="final-panel__readout"
+              aria-label={`${teamName(final.home)} score`}
+            >
+              {homeScore ?? '—'}
+            </div>
+            <div
+              className="final-panel__readout"
+              aria-label={`${teamName(final.away)} score`}
+            >
+              {awayScore ?? '—'}
+            </div>
+          </>
+        ) : (
+          <>
+            <Stepper
+              label={teamName(final.home)}
+              value={homeScore}
+              max={homeIsWinner ? 20 : winnerScore}
+              onChange={setHome}
+            />
+            <Stepper
+              label={teamName(final.away)}
+              value={awayScore}
+              max={!homeIsWinner ? 20 : winnerScore}
+              onChange={setAway}
+            />
+          </>
+        )}
       </div>
-      {home !== null && away !== null && home === away && (
-        <p className="final-panel__warning">
-          Knockout finals can't end in a draw — pick different scores.
-        </p>
-      )}
     </div>
   );
 }

@@ -9,6 +9,7 @@ const ITEMS: { id: ActivePage; label: string }[] = [
 
 export function TopNav() {
   const { state, dispatch } = useAppState();
+  if (state.activePage === 'intro') return null;
   return (
     <nav className="top-nav" aria-label="Primary">
       {ITEMS.map((item) => {

@@ -1,0 +1,22 @@
+{
+  "_note": "Paste this object into the Firestore doc results/current (Database -> Start collection: 'results', Document ID: 'current'). Update fields as matches finish. Each section explained below.",
+  "_howToUse": {
+    "groupResults": "When a group finishes, set its key (A..L) to the actual [1st, 2nd, 3rd, 4th] finisher teamIds — copy values from src/data/teams.json.",
+    "groupDecided": "Set to true when the corresponding group has played all matches and the standings above are final.",
+    "thirdPlaceAdvancers": "Leave null until FIFA confirms the 8 of 12 third-place teams advancing. Then set to the sorted array of group letters, e.g. ['A','B','D','E','G','I','K','L'].",
+    "knockoutResults": "For each knockout match (R32-1..16, R16-1..8, QF-1..4, SF-1..2, F), set the winning teamId.",
+    "matchDecided": "Mark true for each knockout match that's been played and recorded above.",
+    "finalScore": "Regulation time score; e.g. { home: 2, away: 1 }. Penalty-shootout wins still count as a tied finalScore.",
+    "finalDecided": "Set true when the Final is played and finalScore is recorded.",
+    "updatedAt": "Use Date.now() value, or any monotonically-increasing number, when you edit."
+  },
+  "schemaVersion": 1,
+  "groupResults": {},
+  "groupDecided": {},
+  "thirdPlaceAdvancers": null,
+  "knockoutResults": {},
+  "matchDecided": {},
+  "finalScore": { "home": null, "away": null },
+  "finalDecided": false,
+  "updatedAt": 0
+}

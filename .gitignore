@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.agents/*
+skills-lock.json
+firestore.rules
+.firebaserc
+firebase.json
+firestore.indexes.json
+
+# Local Firestore backups and service account credentials
+scripts/backups/
+scripts/.serviceaccount*.json
+*.serviceaccount.json

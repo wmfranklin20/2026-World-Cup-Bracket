@@ -1,3 +1,31 @@
+# 2026 World Cup Bracket Challenge
+
+## Firebase setup
+
+This app persists submitted brackets to Firestore in the `pw-world-cup-bracket`
+project. Before running `npm run dev` for the first time:
+
+1. Copy the env template: `cp .env.example .env.local`
+2. In the Firebase console (project `pw-world-cup-bracket`), go to
+   **Project settings → General → Your apps → Web app → SDK setup and
+   configuration** and copy the config values into `.env.local`.
+3. In **Authentication → Sign-in method**, enable **Anonymous**.
+4. Deploy the Firestore rules in `firestore.rules` (e.g. via
+   `firebase deploy --only firestore:rules`) before submitting from the app —
+   the app expects ownership-enforced rules.
+
+The app signs the browser in anonymously on load; the resulting UID is
+attached to each bracket doc as `ownerUid` so rules can scope reads/writes.
+
+## Scripts
+
+- `npm run dev` — Vite dev server
+- `npm run build` — type-check + production build
+- `npm run lint` — ESLint
+- `npm run preview` — serve the production build
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

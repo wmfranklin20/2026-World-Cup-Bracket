@@ -26,14 +26,21 @@ export function isFinalStepValid(draft: BracketDraft): boolean {
   const { home, away } = draft.finalScore;
   if (home === null || away === null) return false;
   if (home < 0 || away < 0) return false;
-  if (home === away) return false;
   if (!Number.isInteger(home) || !Number.isInteger(away)) return false;
   if (!draft.knockoutPicks.F) return false;
   return true;
 }
 
-export function isReviewStepValid(draft: BracketDraft): boolean {
-  return draft.displayName.trim().length >= 2;
+export function isIdentityNameValid(name: string): boolean {
+  return name.trim().length >= 2;
+}
+
+export function isBracketNameValid(name: string): boolean {
+  return name.trim().length >= 2;
+}
+
+export function isIdentityEmailValid(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 }
 
 export function canAdvance(state: AppState, step: WizardStep): boolean {
@@ -43,17 +50,15 @@ export function canAdvance(state: AppState, step: WizardStep): boolean {
       return isThirdPlaceStepValid(draft);
     case 'knockout':
       return isKnockoutStepValid(draft) && isFinalStepValid(draft);
-    case 'review':
-      return isReviewStepValid(draft);
   }
 }
 
 export function canSubmit(state: AppState): boolean {
-  const { draft } = state;
+  const { draft, identity } = state;
   return (
+    !!identity &&
     isThirdPlaceStepValid(draft) &&
     isKnockoutStepValid(draft) &&
-    isFinalStepValid(draft) &&
-    isReviewStepValid(draft)
+    isFinalStepValid(draft)
   );
 }

@@ -4,12 +4,18 @@ import {
   getR32Order,
   getSFOrder,
 } from '../../lib/bracketSeeding';
-import { ROUND_LABEL, type MatchId, type Round } from '../../types/domain';
+import {
+  ROUND_LABEL,
+  type BracketDraft,
+  type MatchId,
+  type Round,
+} from '../../types/domain';
 import { FinalScorePanel } from './FinalScorePanel';
 import { MatchSlot } from './MatchSlot';
 import './KnockoutBracket.css';
 
 interface Props {
+  draft: BracketDraft;
   readOnly?: boolean;
 }
 
@@ -38,8 +44,9 @@ function BracketColumn({
   round,
   ids,
   side,
+  draft,
   readOnly,
-}: ColumnDef & { readOnly: boolean }) {
+}: ColumnDef & { draft: BracketDraft; readOnly: boolean }) {
   return (
     <div
       className={`bracket__col bracket__col--${round.toLowerCase()} bracket__col--${side}`}
@@ -48,7 +55,7 @@ function BracketColumn({
       <div className="bracket__col-body">
         {ids.map((id) => (
           <div key={id} className="bracket__slot">
-            <MatchSlot matchId={id} readOnly={readOnly} />
+            <MatchSlot matchId={id} draft={draft} readOnly={readOnly} />
           </div>
         ))}
       </div>
@@ -56,33 +63,26 @@ function BracketColumn({
   );
 }
 
-export function KnockoutBracket({ readOnly = false }: Props) {
+export function KnockoutBracket({ draft, readOnly = false }: Props) {
   return (
     <div className="bracket" role="grid" aria-label="Knockout bracket">
-      {LEFT_COLUMNS.map((col) => (
-        <BracketColumn key={col.key} {...col} readOnly={readOnly} />
+      {LEFT_COLUMNS.map(({ key, ...col }) => (
+        <BracketColumn key={key} {...col} draft={draft} readOnly={readOnly} />
       ))}
       <div className="bracket__col bracket__col--f">
         <header className="bracket__col-head">{ROUND_LABEL.F}</header>
         <div className="bracket__col-body">
           <div className="bracket__final-container">
             <div className="bracket__slot bracket__slot--final">
-              <MatchSlot matchId="F" readOnly={readOnly} />
+              <MatchSlot matchId="F" draft={draft} readOnly={readOnly} />
             </div>
-            {!readOnly && (
-              <>
-                <div
-                  className="bracket__final-divider"
-                  aria-hidden="true"
-                />
-                <FinalScorePanel />
-              </>
-            )}
+            <div className="bracket__final-divider" aria-hidden="true" />
+            <FinalScorePanel draft={draft} readOnly={readOnly} />
           </div>
         </div>
       </div>
-      {RIGHT_COLUMNS.map((col) => (
-        <BracketColumn key={col.key} {...col} readOnly={readOnly} />
+      {RIGHT_COLUMNS.map(({ key, ...col }) => (
+        <BracketColumn key={key} {...col} draft={draft} readOnly={readOnly} />
       ))}
     </div>
   );

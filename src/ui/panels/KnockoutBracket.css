@@ -5,7 +5,6 @@
     minmax(300px, 1.9fr)
     repeat(4, minmax(140px, 1fr));
   gap: var(--space-3);
-  overflow-x: auto;
   padding-bottom: var(--space-3);
   align-items: stretch;
 }
@@ -17,12 +16,17 @@
 }
 
 .bracket__col-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--color-bg);
   text-align: center;
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-heading);
   color: var(--color-text-muted);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  padding-top: var(--space-1);
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--color-border);
   margin-bottom: var(--space-2);
@@ -92,9 +96,14 @@
   box-shadow: none;
 }
 
-.bracket__final-container .final-panel:not(.final-panel--empty) > h2,
 .bracket__final-container .final-panel:not(.final-panel--empty) > .final-panel__sub {
   display: none;
+}
+
+.bracket__final-container .final-panel:not(.final-panel--empty) > h2 {
+  font-size: var(--font-size-md);
+  text-align: center;
+  margin-top: var(--space-1);
 }
 
 .bracket__final-container .final-panel__board {
@@ -127,11 +136,63 @@
   background: var(--bracket-line);
 }
 
+/* Vertical merge lines: drawn on the outer side of each prev-round slot
+   and bridging the gap so the two feeders of a pair join into the
+   horizontal stub of the next-round match. */
+.bracket__col--left.bracket__col--r32 .bracket__col-body > .bracket__slot:nth-child(odd)::after,
+.bracket__col--left.bracket__col--r16 .bracket__col-body > .bracket__slot:nth-child(odd)::after,
+.bracket__col--left.bracket__col--qf .bracket__col-body > .bracket__slot:nth-child(odd)::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: calc(50% + var(--space-2) / 2);
+  width: 2px;
+  background: var(--bracket-line);
+}
+
+.bracket__col--left.bracket__col--r32 .bracket__col-body > .bracket__slot:nth-child(even)::after,
+.bracket__col--left.bracket__col--r16 .bracket__col-body > .bracket__slot:nth-child(even)::after,
+.bracket__col--left.bracket__col--qf .bracket__col-body > .bracket__slot:nth-child(even)::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: calc(var(--space-2) / -2);
+  height: calc(50% + var(--space-2) / 2);
+  width: 2px;
+  background: var(--bracket-line);
+}
+
+.bracket__col--right.bracket__col--r32 .bracket__col-body > .bracket__slot:nth-child(odd)::before,
+.bracket__col--right.bracket__col--r16 .bracket__col-body > .bracket__slot:nth-child(odd)::before,
+.bracket__col--right.bracket__col--qf .bracket__col-body > .bracket__slot:nth-child(odd)::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: calc(50% + var(--space-2) / 2);
+  width: 2px;
+  background: var(--bracket-line);
+}
+
+.bracket__col--right.bracket__col--r32 .bracket__col-body > .bracket__slot:nth-child(even)::before,
+.bracket__col--right.bracket__col--r16 .bracket__col-body > .bracket__slot:nth-child(even)::before,
+.bracket__col--right.bracket__col--qf .bracket__col-body > .bracket__slot:nth-child(even)::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: calc(var(--space-2) / -2);
+  height: calc(50% + var(--space-2) / 2);
+  width: 2px;
+  background: var(--bracket-line);
+}
+
 .bracket__final-container::before,
 .bracket__final-container::after {
   content: '';
   position: absolute;
-  top: var(--space-7);
+  top: 50%;
+  transform: translateY(-50%);
   width: var(--space-3);
   height: 2px;
   background: var(--bracket-line);
@@ -153,10 +214,12 @@
   .bracket {
     grid-template-columns: 1fr;
     gap: var(--space-5);
-    overflow-x: visible;
   }
   .bracket__col {
     min-width: 0;
+  }
+  .bracket__col-head {
+    position: static;
   }
   .bracket__col-body {
     display: grid;

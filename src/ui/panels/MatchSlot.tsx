@@ -1,6 +1,6 @@
 import { useAppState } from '../../hooks/useAppState';
 import { resolveMatchup } from '../../lib/bracketSeeding';
-import type { MatchId, TeamId } from '../../types/domain';
+import type { BracketDraft, MatchId, TeamId } from '../../types/domain';
 import { teamName } from '../../lib/teamLookup';
 import { TeamRow } from '../displays/TeamRow';
 import { EmptyTeamSlot } from '../displays/EmptyTeamSlot';
@@ -8,12 +8,13 @@ import './MatchSlot.css';
 
 interface Props {
   matchId: MatchId;
+  draft: BracketDraft;
   readOnly?: boolean;
 }
 
-export function MatchSlot({ matchId, readOnly = false }: Props) {
-  const { state, dispatch } = useAppState();
-  const matchup = resolveMatchup(matchId, state.draft);
+export function MatchSlot({ matchId, draft, readOnly = false }: Props) {
+  const { dispatch } = useAppState();
+  const matchup = resolveMatchup(matchId, draft);
 
   const onPick = (teamId: TeamId | null) => {
     if (readOnly || !teamId) return;
@@ -51,7 +52,9 @@ export function MatchSlot({ matchId, readOnly = false }: Props) {
       className="match-slot"
       aria-label={`${matchId}: ${matchup.homeLabel} vs ${matchup.awayLabel}`}
     >
-      <span className="match-slot__id">{matchId}</span>
+      <span className="match-slot__id">
+        {matchId === 'F' ? 'Final' : matchId}
+      </span>
       <div className="match-slot__sides">
         {renderSide(matchup.home, matchup.homeLabel)}
         {renderSide(matchup.away, matchup.awayLabel)}
